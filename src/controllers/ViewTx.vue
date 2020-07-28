@@ -34,7 +34,7 @@
           <v-flex xs1>
             <p v-for="(vtx, vid) in tx.inputs" :key="vid"
                :class="vtx.address === wallet.info.address ? 'red--text' : ''">
-              &nbsp;QTUM
+              &nbsp;EVO
             </p>
           </v-flex>
           <v-flex xs1>
@@ -61,7 +61,7 @@
             <p v-for="(vtx, vid) in tx.outputs" :key="vid"
                :class="vtx.address === wallet.info.address ? 'green--text' : ''">
               <template v-if="vtx.address">
-                QTUM
+                EVO
               </template>
             </p>
           </v-flex>

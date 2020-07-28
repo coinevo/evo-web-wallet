@@ -46,8 +46,8 @@ export default class Ledger {
     const qtum = new btcApp(await transportU2f.create())
     // ensure in Qtum App
     const pubkeyRes = await qtum.getWalletPublicKey(Ledger.defaultPath)
-    if (pubkeyRes.bitcoinAddress[0] !== 'Q') {
-      throw 'Not Qtum App'
+    if (pubkeyRes.bitcoinAddress[0] !== '1') {
+      throw 'Not EVO App'
     }
     return new Ledger(qtum)
   }

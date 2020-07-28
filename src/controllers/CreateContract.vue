@@ -14,7 +14,7 @@
         <a href="https://ethereum.github.io/browser-solidity/" target="_blank"
            style="float: right;">{{ $t('create_contract.compiler') }}</a>
         <v-text-field
-          label="Gas Price (1e-8 QTUM/gas)"
+          label="Gas Price (1e-8 EVO/gas)"
           v-model.trim="gasPrice"
           required
         ></v-text-field>
